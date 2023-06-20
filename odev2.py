@@ -15,23 +15,14 @@ df.info()
 
 ["NUM_" + col.upper() if df[col].dtype != "O" else col.upper() for col in df.columns]
 
-##################################
-# Görev 2
-##################################
 
 [col.upper() + "_FLAG" if "no" not in col else col.upper() for col in df.columns]
 
-##################################
-# Görev 3
-##################################
+
 og_list = ["abbrev", "no_previous"]
 new_cols = [col for col in df.columns if col not in og_list]
 new_df = df[new_cols]
 new_df.head()
-
-##################################################
-# Pandas Alıştırmalar
-##################################################
 
 
 df = sns.load_dataset("titanic")
