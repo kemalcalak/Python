@@ -3,30 +3,30 @@ type(123)
 "123"
 type("123")
 
-"a" + "b" 
-"a" " b" 
-"a" + "-b" 
+"a" + "b"
+"a" " b"
+"a" + "-b"
 
-"a" - "b" 
+"a" - "b"
 
-"a "*3
-"a"/3
+"a " * 3
+"a" / 3
 
-#STRING METODLARI - len()
+# STRING METODLARI - len()
 
 gel_yaz = "gelecegi_yazanlar"
-#del mvk
+# del mvk
 
 a = 9
 b = 10
 
-a*b
+a * b
 
 
 len(gel_yaz)
 len("gelecegi_yazanlar")
 
-#STRING METODLARI - upper() & lower()
+# STRING METODLARI - upper() & lower()
 
 gel_yaz = "gelecegi_yazanlar"
 
@@ -39,15 +39,15 @@ B = gel_yaz.upper()
 B.islower()
 B.isupper()
 
-#STRING METODLARI - replace()
+# STRING METODLARI - replace()
 
 gel_yaz = "gelecegi_yazanlar"
 
-gel_yaz.replace("e","a")
+gel_yaz.replace("e", "a")
 
-gel_yaz.replace("a","i")
+gel_yaz.replace("a", "i")
 
-#STRING METODLARI - strip()
+# STRING METODLARI - strip()
 
 gel_yaz = " gelecegi_yazanlar "
 gel_yaz.strip()

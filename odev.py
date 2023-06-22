@@ -19,30 +19,28 @@ type(b)
 c = 23 < 22
 type(c)
 
-l = [1, 2, 3, 4,"String",3.2, False]
+l = [1, 2, 3, 4, "String", 3.2, False]
 type(l)
 
-d = {"Name": "Jake",
-     "Age": [27,56],
-     "Adress": "Downtown"}
+d = {"Name": "Jake", "Age": [27, 56], "Adress": "Downtown"}
 type(d)
 
 t = ("Machine Learning", "Data Science")
 type(t)
 
-s = {"Python", "Machine Learning", "Data Science","Python"}
+s = {"Python", "Machine Learning", "Data Science", "Python"}
 type(s)
 
 ##################################
-#Görev 2
+# Görev 2
 ##################################
 text = "The goal is to turn data into information, and information into insight."
-text.upper().replace(","," ").replace("."," ").split()
+text.upper().replace(",", " ").replace(".", " ").split()
 
 ##################################
-#Görev 3
+# Görev 3
 ##################################
-lst = ["D","A","T","A","S","C","I","E","N","C","E"]
+lst = ["D", "A", "T", "A", "S", "C", "I", "E", "N", "C", "E"]
 
 # Adım 1
 len(lst)
@@ -69,12 +67,14 @@ lst.insert(8, "N")
 lst
 
 ##################################
-#Görev 4
+# Görev 4
 ##################################
-dict = {'Christian': ["America",18],
-        'Daisy':["England",12],
-        'Antonio':["Spain",22],
-        'Dante':["Italy",25]}
+dict = {
+    "Christian": ["America", 18],
+    "Daisy": ["England", 12],
+    "Antonio": ["Spain", 22],
+    "Dante": ["Italy", 25],
+}
 
 # Adım 1
 dict.keys()
@@ -83,7 +83,7 @@ dict.keys()
 dict.values()
 
 # Adım 3
-dict.update({"Daisy": ["England",13]})
+dict.update({"Daisy": ["England", 13]})
 dict
 
 dict["Daisy"][1] = 14
@@ -98,13 +98,13 @@ dict.pop("Antonio")
 dict
 
 ##################################
-#Görev 5
+# Görev 5
 ##################################
 
-l = [2,13,18,93,22]
+l = [2, 13, 18, 93, 22]
+
 
 def func(list):
-
     çift_list = []
     tek_list = []
 
@@ -117,40 +117,44 @@ def func(list):
     return çift_list, tek_list
 
 
-çift,tek = func(l)
+çift, tek = func(l)
 
 ##################################
-#Görev 6
+# Görev 6
 ##################################
-ogrenciler = ["Ali","Veli","Ayşe","Talat","Zeynep","Ece"]
-for i,x in enumerate(ogrenciler):
-    if i<3:
+ogrenciler = ["Ali", "Veli", "Ayşe", "Talat", "Zeynep", "Ece"]
+for i, x in enumerate(ogrenciler):
+    if i < 3:
         i += 1
-        print("Mühendislik Fakültesi",i,". öğrenci: ",x)
+        print("Mühendislik Fakültesi", i, ". öğrenci: ", x)
     else:
         i -= 2
-        print("Tıp Fakültesi",i,". öğrenci: ",x)
+        print("Tıp Fakültesi", i, ". öğrenci: ", x)
 
 ##################################
-#Görev 7
+# Görev 7
 ##################################
-ders_kodu = ["CMP1005","PSY1001","HUK1005","SEN2204"]
-kredi = [3,4,2,4]
-kontenjan = [30,75,150,25]
+ders_kodu = ["CMP1005", "PSY1001", "HUK1005", "SEN2204"]
+kredi = [3, 4, 2, 4]
+kontenjan = [30, 75, 150, 25]
 
 for ders_kodu, kredi, kontenjan in zip(ders_kodu, kredi, kontenjan):
-  print(f"Kredisi {kredi} olan {ders_kodu} kodlu dersin kontenjanı {kontenjan} kişidir.")
+    print(
+        f"Kredisi {kredi} olan {ders_kodu} kodlu dersin kontenjanı {kontenjan} kişidir."
+    )
 
 ##################################
-#Görev 8
+# Görev 8
 ##################################
 kume1 = set(["data", "python"])
 kume2 = set(["data", "function", "qcut", "lambda", "python", "miuul"])
 
-def kume(set1,set2):
+
+def kume(set1, set2):
     if set1.issuperset(set2):
         print(set1.intersection(set2))
     else:
         print(set2.difference(set1))
 
-kume(kume1,kume2)
+
+kume(kume1, kume2)

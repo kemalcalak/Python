@@ -15,13 +15,13 @@ float(12)
 
 type(str(12))
 
-#print()
+# print()
 
 print("HELLO AI ERA")
 
-print("gelecegi","yazanlar")
+print("gelecegi", "yazanlar")
 
-print("gelecegi","yazanlar", sep = "_")
+print("gelecegi", "yazanlar", sep="_")
 
 print()
 

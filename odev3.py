@@ -4,9 +4,10 @@
 
 # Soru 1: miuul_gezinomi.xlsx dosyasını okutunuz ve veri seti ile ilgili genel bilgileri gösteriniz.
 import pandas as pd
+
 pd.set_option("display.max_columns", None)
-df = pd.read_excel('dataset/miuul_gezinomi.xlsx')
-pd.set_option('display.float_format', lambda x: '%.2f' % x)
+df = pd.read_excel("dataset/miuul_gezinomi.xlsx")
+pd.set_option("display.float_format", lambda x: "%.2f" % x)
 print(df.head())
 print(df.shape)
 print(df.info())
@@ -28,13 +29,13 @@ df.groupby("SaleCityName").agg({"Price": "sum"})
 df.groupby("ConceptName").agg({"Price": "sum"})
 
 # Soru 7: Şehirlere göre PRICE ortalamaları nedir?
-df.groupby(by=['SaleCityName']).agg({"Price": "mean"})
+df.groupby(by=["SaleCityName"]).agg({"Price": "mean"})
 
 # Soru 8: Conceptlere  göre PRICE ortalamaları nedir?
-df.groupby(by=['ConceptName']).agg({"Price": "mean"})
+df.groupby(by=["ConceptName"]).agg({"Price": "mean"})
 
 # Soru 9: Şehir-Concept kırılımında PRICE ortalamaları nedir?
-df.groupby(by=["SaleCityName", 'ConceptName']).agg({"Price": "mean"})
+df.groupby(by=["SaleCityName", "ConceptName"]).agg({"Price": "mean"})
 
 #############
 # GÖREV 2: satis_checkin_day_diff değişkenini EB_Score adında yeni bir kategorik değişkene çeviriniz.
@@ -50,15 +51,25 @@ df.head(50).to_excel("eb_scorew.xlsx", index=False)
 # GÖREV 3:Şehir,Concept, [EB_Score,Sezon,CInday] kırılımında ücret ortalamalarına ve frekanslarına bakınız
 #############
 
-df.groupby(by=["SaleCityName", 'ConceptName', "EB_Score" ]).agg({"Price": ["mean", "count"]})
-df.groupby(by=["SaleCityName", "ConceptName", "Seasons"]).agg({"Price": ["mean", "count"]})
-df.groupby(by=["SaleCityName", "ConceptName", "CInDay"]).agg({"Price": ["mean", "count"]})
+df.groupby(by=["SaleCityName", "ConceptName", "EB_Score"]).agg(
+    {"Price": ["mean", "count"]}
+)
+df.groupby(by=["SaleCityName", "ConceptName", "Seasons"]).agg(
+    {"Price": ["mean", "count"]}
+)
+df.groupby(by=["SaleCityName", "ConceptName", "CInDay"]).agg(
+    {"Price": ["mean", "count"]}
+)
 
 #############
 # GÖREV 4:City-Concept-Season kırılımın çıktısını PRICE'a göre sıralayınız.
 #############
 
-agg_df = df.groupby(["SaleCityName", "ConceptName", "Seasons"]).agg({"Price": "mean"}).sort_values("Price", ascending=False)
+agg_df = (
+    df.groupby(["SaleCityName", "ConceptName", "Seasons"])
+    .agg({"Price": "mean"})
+    .sort_values("Price", ascending=False)
+)
 agg_df.head(20)
 
 #############
@@ -72,7 +83,9 @@ agg_df.head()
 # GÖREV 6:Yeni level based satışları tanımlayınız ve veri setine değişken olarak ekleyiniz.
 #############
 
-agg_df['sales_level_based'] = agg_df[["SaleCityName", "ConceptName", "Seasons"]].agg(lambda x: '_'.join(x).upper(), axis=1)
+agg_df["sales_level_based"] = agg_df[["SaleCityName", "ConceptName", "Seasons"]].agg(
+    lambda x: "_".join(x).upper(), axis=1
+)
 
 #############
 # GÖREV 7:Personaları segmentlere ayırınız.

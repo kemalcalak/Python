@@ -1,9 +1,9 @@
 9
 9.2
-9+9
-9*9
+9 + 9
+9 * 9
 
-print('HELLO AI ERA')
+print("HELLO AI ERA")
 "HELLO AI ERA"
 
 type(9)

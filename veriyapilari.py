@@ -1,17 +1,17 @@
-#Tuple Olusturma
+# Tuple Olusturma
 
-t = ("ali","veli",1,2,3.2,[1,2,3,4])
+t = ("ali", "veli", 1, 2, 3.2, [1, 2, 3, 4])
 
-t = "ali","veli",1,2,3.2, [1,2,3,4]
+t = "ali", "veli", 1, 2, 3.2, [1, 2, 3, 4]
 
-#tuple()
+# tuple()
 
 t = ("eleman",)
 type(t)
 
-#Tuple Eleman Islemleri
+# Tuple Eleman Islemleri
 
-t = ("ali","veli",1,2,3, [1,2,3,4])
+t = ("ali", "veli", 1, 2, 3, [1, 2, 3, 4])
 t
 
 t[1]
@@ -22,34 +22,34 @@ t[2] = 99
 # Veri Yapıları - Dictionary (Sözlük)
 
 
-#Sozluk Olusturma
-sozluk = {"REG" : "Regresyon Modeli",
-          "LOJ" : "Lojistik Regresyon",
-          "CART" : "Classification and Reg"}
+# Sozluk Olusturma
+sozluk = {
+    "REG": "Regresyon Modeli",
+    "LOJ": "Lojistik Regresyon",
+    "CART": "Classification and Reg",
+}
 
 sozluk
 
 len(sozluk)
 
 
-sozluk = {"REG" : 10,
-          "LOJ" : 20,
-          "CART" : 30}
+sozluk = {"REG": 10, "LOJ": 20, "CART": 30}
 
 sozluk
 
 
-sozluk = {"REG" : ["RMSE",10],
-          "LOJ" : ["MSE", 20],
-          "CART" : ["SSE",30]}
+sozluk = {"REG": ["RMSE", 10], "LOJ": ["MSE", 20], "CART": ["SSE", 30]}
 
 sozluk
 
-#Sozluk Eleman Islemleri
+# Sozluk Eleman Islemleri
 
-sozluk = {"REG" : "Regresyon Modeli",
-          "LOJ" : "Lojistik Regresyon",
-          "CART" : "Classification and Reg"}
+sozluk = {
+    "REG": "Regresyon Modeli",
+    "LOJ": "Lojistik Regresyon",
+    "CART": "Classification and Reg",
+}
 
 
 sozluk[0]
@@ -57,33 +57,27 @@ sozluk[0]
 sozluk["REG"]
 sozluk["LOJ"]
 
-sozluk = {"REG" : ["RMSE",10],
-          "LOJ" : ["MSE", 20],
-          "CART" : ["SSE",30]}
+sozluk = {"REG": ["RMSE", 10], "LOJ": ["MSE", 20], "CART": ["SSE", 30]}
 
 
 sozluk["REG"]
 
-sozluk = {"REG" : {"RMSE": 10,
-                   "MSE" : 20,
-                   "SSE" : 30},
-
-          "LOJ" : {"RMSE": 10,
-                   "MSE" : 20,
-                   "SSE" : 30},
-                   
-          "CART" : {"RMSE": 10,
-                   "MSE" : 20,
-                   "SSE" : 30}}
+sozluk = {
+    "REG": {"RMSE": 10, "MSE": 20, "SSE": 30},
+    "LOJ": {"RMSE": 10, "MSE": 20, "SSE": 30},
+    "CART": {"RMSE": 10, "MSE": 20, "SSE": 30},
+}
 
 sozluk
 sozluk["REG"]["SSE"]
 
-#Sozluk - Eleman Eklemek & Degistirmek
+# Sozluk - Eleman Eklemek & Degistirmek
 
-sozluk = {"REG" : "Regresyon Modeli",
-          "LOJ" : "Lojistik Regresyon",
-          "CART" : "Classification and Reg"}
+sozluk = {
+    "REG": "Regresyon Modeli",
+    "LOJ": "Lojistik Regresyon",
+    "CART": "Classification and Reg",
+}
 
 sozluk["GBM"] = "Gradient Boosting Mac"
 sozluk
@@ -105,19 +99,19 @@ t = ("tuple",)
 sozluk[t] = "yeni bir sey"
 sozluk
 
-#Veri Yapilari - Setler
+# Veri Yapilari - Setler
 
-#Set olusturmak
+# Set olusturmak
 
 s = set()
 s
 
-l = [1,"a","ali", 123]
+l = [1, "a", "ali", 123]
 s = set(l)
 s
 
 
-t = ("a","ali")
+t = ("a", "ali")
 
 s = set(t)
 s
@@ -128,8 +122,7 @@ type(ali)
 s = set(ali)
 s
 
-l = ["ali", "lutfen", "ata", "bakma", "uzaya",
-     "git", "git", "ali","git"]
+l = ["ali", "lutfen", "ata", "bakma", "uzaya", "git", "git", "ali", "git"]
 
 l
 
@@ -143,10 +136,9 @@ l[0]
 s[0]
 
 
-
 # Eleman ekleme & cikarma
 
-l = ["gelecegi","yazanlar"]
+l = ["gelecegi", "yazanlar"]
 
 s = set(l)
 

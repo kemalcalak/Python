@@ -1,20 +1,22 @@
-#Sinif Ozellikleri (Class attributes)
+# Sinif Ozellikleri (Class attributes)
 
-class VeriBilimci():
-    bolum = ''
-    sql = 'Evet'
+
+class VeriBilimci:
+    bolum = ""
+    sql = "Evet"
     deneyim_yili = 0
     bildigi_diller = []
-    
-#Siniflarin ozelliklerine erismek
+
+
+# Siniflarin ozelliklerine erismek
 VeriBilimci.bolum
 VeriBilimci.sql
 
-#siniflarin ozelliklerini degistirmek
+# siniflarin ozelliklerini degistirmek
 VeriBilimci.sql = "Hayir"
 VeriBilimci.sql
 
-#Sinif Orneklendirmesi (instantiation)
+# Sinif Orneklendirmesi (instantiation)
 
 ali = VeriBilimci()
 
@@ -29,16 +31,19 @@ veli.sql
 
 veli.bildigi_diller
 
-#Ornek ozellikleri
+# Ornek ozellikleri
 
-class VeriBilimci():
-    bildigi_diller = ["R","PYTHON"]
-    bolum = ''
-    sql = ''
+
+class VeriBilimci:
+    bildigi_diller = ["R", "PYTHON"]
+    bolum = ""
+    sql = ""
     deneyim_yili = 0
+
     def __init__(self):
         self.bildigi_diller = []
-        self.bolum = ''
+        self.bolum = ""
+
 
 ali = VeriBilimci()
 ali.bildigi_diller
@@ -65,14 +70,17 @@ veli.bolum
 ali.bolum
 VeriBilimci.bolum
 
-#Ornek Metodlari
+# Ornek Metodlari
 
-class VeriBilimci():
+
+class VeriBilimci:
     calisanlar = []
+
     def __init__(self):
         self.bildigi_diller = []
-        self.bolum = ''
-    def dil_ekle(self, yeni_dil) :
+        self.bolum = ""
+
+    def dil_ekle(self, yeni_dil):
         self.bildigi_diller.append(yeni_dil)
 
 

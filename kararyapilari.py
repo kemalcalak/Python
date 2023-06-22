@@ -1,4 +1,4 @@
-#True-False Sorgulamaları
+# True-False Sorgulamaları
 
 sinir = 5000
 
@@ -12,7 +12,7 @@ sinir == 5000
 5 == 5
 
 
-#if
+# if
 
 sinir = 50000
 gelir = 60000
@@ -21,43 +21,43 @@ gelir < sinir
 
 if gelir < sinir:
     print("Gelir sinirdan kucuk")
-    
+
 if gelir > sinir:
     print("Gelir sinirdan kucuk")
-  
 
-#else
+
+# else
 
 sinir = 50000
 gelir = 35000
-    
+
 if gelir > sinir:
     print("Gelir sinirdan buyuk")
 else:
-    print("Gelir sinirdan kucuk")    
+    print("Gelir sinirdan kucuk")
 
-#diger ornek
+# diger ornek
 sinir = 50000
 gelir = 50000
-    
+
 if gelir == sinir:
     print("Gelir sinira esittir")
 else:
-    print("Gelir sinira esit degildir")  
+    print("Gelir sinira esit degildir")
 
-#elif
+# elif
 
 sinir = 50000
 gelir1 = 60000
 gelir2 = 50000
 gelir3 = 35000
-    
+
 if gelir1 > sinir:
     print("Tebrikler, hediye kazandiniz.")
 elif gelir1 < sinir:
     print("Uyari!")
 else:
-    print("Takibe devam")  
+    print("Takibe devam")
 
 
 if gelir3 > sinir:
@@ -65,7 +65,7 @@ if gelir3 > sinir:
 elif gelir3 < sinir:
     print("Uyari!")
 else:
-    print("Takibe devam")  
+    print("Takibe devam")
 
 
 if gelir2 > sinir:
@@ -73,9 +73,9 @@ if gelir2 > sinir:
 elif gelir2 < sinir:
     print("Uyari!")
 else:
-    print("Takibe devam")  
+    print("Takibe devam")
 
-#mini uygulama
+# mini uygulama
 sinir = 50000
 magaza_adi = input("Magaza Adi Nedir?")
 gelir = int(input("Gelirinizi Giriniz:"))
