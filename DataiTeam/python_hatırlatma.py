@@ -1,13 +1,4 @@
-# PYTHON HATIRLATMA
-"""
-PYTHON
-Python, nesne yönelimli, yorumlamalı, birimsel ve etkileşimli yüksek seviyeli bir programlama dilidir. 
-Girintilere dayalı basit sözdizimi, dilin öğrenilmesini ve akılda kalmasını kolaylaştırır. 
-Bu da ona söz diziminin ayrıntıları ile vakit yitirmeden programlama yapılmaya başlanabilen bir dil olma özelliği kazandırır.
-"""
-# %% Spyder Tanıtımı
 
-# %% Değişkenler
 
 tamsayi_degisken = 10
 ondaliksayi_degisken = 12.3
@@ -37,15 +28,13 @@ print(string)
 
 resim_yolu = "veri" + "\\" + "img" + ".png"
 print(resim_yolu) 
-# %% 
+
 # Python Temel Sözdizimi
 # büyük/küçük harf, yorum yazma, kod girintisi ve anahtar sözcükler gibi söz dizilimlerini öğreneceğiz.
 temel = 6
 TEMEL = 7
 print(temel)
 print(TEMEL)
-
-# Buraya ilk yorumumu yazıyorum.
 
 # bu bölümde yazan kodları ilerleyen kısımlarda öğreneceğiz
 # girintinin önemini anlatmak için örnek
