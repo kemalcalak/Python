@@ -16,7 +16,7 @@ print(torch.cuda.get_device_name(torch.cuda.current_device()))
 # CUDA kullanacak şekilde ayarlayın
 device = "cuda:1"  # GPU 1'i kullanacak şekilde ayarlandı
 
-yolov8_model_path = "yolov8s.pt"
+yolov8_model_path = "best.pt"
 download_yolov8s_model(yolov8_model_path)
 
 # Modeli CUDA cihazına yükleyin
@@ -27,7 +27,7 @@ detection_model = AutoDetectionModel.from_pretrained(
     device=device,  # Yukarıda ayarladığınız CUDA cihazını kullanın
 )
 
-videocapture = cv2.VideoCapture("test.mp4")
+videocapture = cv2.VideoCapture("f1.mp4")
 
 output_video_name = "output_tracking.mp4"
 frame_width = int(videocapture.get(3))
