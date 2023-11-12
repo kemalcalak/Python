@@ -1,1 +1,0 @@
-# Nesne-Tespiti-YOLOv8
